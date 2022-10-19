@@ -1,8 +1,17 @@
+
 # Portfolio Teun Mos
 
 ## Table of contents
 - [Intro](#intro)
-- [Proof](#proof)
+- [Proof for learning outcomes](#proof)
+  - [Web application](https://github.com/TeunMos/S3-DB04-Portfolio/blob/main/Proof/Web-application.md)
+  - [Software quality](https://github.com/TeunMos/S3-DB04-Portfolio/blob/main/Proof/Software-quality.md)
+  - [Agile method](https://github.com/TeunMos/S3-DB04-Portfolio/blob/main/Proof/Agile-method.md)
+  - [CI/CD](https://github.com/TeunMos/S3-DB04-Portfolio/blob/main/Proof/CI-CD.md)
+  - [Cultural differences and ethics](https://github.com/TeunMos/S3-DB04-Portfolio/blob/main/Proof/Cultural-differences-and-ethics.md)
+  - [Requirements and design](https://github.com/TeunMos/S3-DB04-Portfolio/blob/main/Proof/Requirements-and-design.md)
+  - [Business processes](https://github.com/TeunMos/S3-DB04-Portfolio/blob/main/Proof/Business-processes.md)
+  - [Professional](https://github.com/TeunMos/S3-DB04-Portfolio/blob/main/Proof/Professional.md)
 
 ## Intro
 Hello, My name is Teun Mos I am studying software at FHICT in eindhoven. This repository is a summary of what I did in the 3rd semester (*2022-2023*) and it contains the proof for my learning outcomes.
