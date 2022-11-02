@@ -1,3 +1,4 @@
+
 # CI/CD
 This file containes all the proof for the CI/CD learing outcome.
 
@@ -19,3 +20,58 @@ We used Github workflow files to build and push our projects to Docker Hub. [Her
 ![image](https://user-images.githubusercontent.com/81776357/199513242-1f23d4c7-52c0-41ae-9792-b7e91313fb29.png)
 
 We have made a shared Docker account where you can see all our published containers. [*Click here*](https://hub.docker.com/u/teunlukas) to view our account.
+
+### Docker compose
+
+We've also made a Docker compose file to make it easy to run our project. the compose file pulls the Docker images from Docker Hub and sets up the containers as they should be set-up with the correct ports. 
+
+This is how the Docker compose file looks like *(as of 2-11-2022)*:
+``` yaml
+name: dashboard
+services:
+ 
+  dashboard-frontend:
+    container_name: frontend
+    restart: unless-stopped
+    image: teunlukas/dashboard-frontend:main
+    ports:
+      - 3000:3000
+    env_file:
+    - ./.env
+    
+  user-preferences-db:
+    container_name: user-preferences-db
+    restart: unless-stopped
+    image: mongo
+    ports:
+        - 27017:27017
+        
+  user-preferences-api:
+    container_name: user-preferences-api
+    restart: unless-stopped
+    image: teunlukas/dashboard-user-preferences-api:main
+    ports:
+        - 8000:8000
+    env_file:
+    - ./.env
+    links:
+     - user-preferences-db
+```
+> this info may be out of date, to ensure you have the latest information [_click here!_](https://github.com/IPS3-DB04-Teun-Mos-Lukas-Jansen#running-the-project)
+
+the compose file also needs a .env file for the enviorment variables:
+```
+REACT_APP_CLIENT_ID = ...
+REACT_APP_CLIENT_SECRET = ...
+REACT_APP_REDIRECT_URI = http://localhost:3000
+REACT_APP_USER_PREFRERENCES_URL = http://localhost:8000
+USER_PREF_DB_URL ='mongodb://user-preferences-db:27017/'
+```
+> this info may be out of date, to ensure you have the latest information [_click here!_](https://github.com/IPS3-DB04-Teun-Mos-Lukas-Jansen#running-the-project)
+
+
+
+
+This is how The containers from the compose file look in Docker Desktop:
+
+![image](https://user-images.githubusercontent.com/81776357/199514315-eb309925-0de8-4055-a336-ac79280d5060.png)
