@@ -25,7 +25,7 @@ We have made a shared Docker account where you can see all our published contain
 
 We've also made a Docker compose file to make it easy to run our project. the compose file pulls the Docker images from Docker Hub and sets up the containers as they should be set-up with the correct ports. 
 
-This is how the Docker compose file looks like *(as of 2-11-2022)*:
+This is how the Docker compose file looks like *(as of 7-12-2022)*:
 ``` yaml
 name: dashboard
 services:
@@ -38,6 +38,11 @@ services:
       - 3000:3000
     env_file:
     - ./.env
+    environment:
+        REACT_APP_REDIRECT_URI: "http://localhost:3000"
+        REACT_APP_USER_PREFRERENCES_URL: "http://localhost:8000"
+        REACT_APP_INTEGRATIONS_URL: "https://localhost:8001"
+        REACT_APP_INTEGRATIONS_URL_INSECURE: "http://localhost:81"
     
   user-preferences-db:
     container_name: user-preferences-db
@@ -55,7 +60,30 @@ services:
     env_file:
     - ./.env
     links:
-     - user-preferences-db
+    - user-preferences-db
+    environment:
+        USER_PREF_DB_URL: "mongodb://user-preferences-db:27017/"
+
+  integration-db:
+    container_name: integration-db
+    restart: unless-stopped
+    image: mongo
+    ports:
+        - 27016:27017
+        
+  integrations-api:
+    container_name: integrations-api
+    restart: unless-stopped
+    image: teunlukas/dashboard-integration-api:main
+    ports:
+        - 8001:443
+        - 81:80
+    links:
+    - integration-db
+    env_file:
+    - ./.env
+    environment:
+        INTEGRATION_DB_URL: "mongodb://integration-db:27017"
 ```
 > this info may be out of date, to ensure you have the latest information [_click here!_](https://github.com/IPS3-DB04-Teun-Mos-Lukas-Jansen#running-the-project)
 
@@ -63,9 +91,7 @@ the compose file also needs a .env file for the enviorment variables:
 ```
 REACT_APP_CLIENT_ID = ...
 REACT_APP_CLIENT_SECRET = ...
-REACT_APP_REDIRECT_URI = http://localhost:3000
-REACT_APP_USER_PREFRERENCES_URL = http://localhost:8000
-USER_PREF_DB_URL ='mongodb://user-preferences-db:27017/'
+OPENWEATHERMAP_APIKEY = ...
 ```
 > this info may be out of date, to ensure you have the latest information [_click here!_](https://github.com/IPS3-DB04-Teun-Mos-Lukas-Jansen#running-the-project)
 
