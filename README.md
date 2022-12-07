@@ -32,6 +32,6 @@ For a list of the learning outcomes of this semester [click here](https://github
 |Agile method|[🔗](https://github.com/TeunMos/S3-DB04-Portfolio/blob/main/Proof/Agile-method.md)|
 |CI/CD|[🔗](https://github.com/TeunMos/S3-DB04-Portfolio/blob/main/Proof/CI-CD.md)|
 |Cultural differences and ethics|[🔗](https://github.com/TeunMos/S3-DB04-Portfolio/blob/main/Proof/Cultural-differences-and-ethics.md) (TBA)|
-|Requirements and design|[🔗](https://github.com/TeunMos/S3-DB04-Portfolio/blob/main/Proof/Requirements-and-design.md) (TBA)|
+|Requirements and design|[🔗](https://github.com/TeunMos/S3-DB04-Portfolio/blob/main/Proof/Requirements-and-design.md)|
 |Business processes|[🔗](https://github.com/TeunMos/S3-DB04-Portfolio/blob/main/Proof/Business-processes.md) (TBA)|
 |Professional|[🔗](https://github.com/TeunMos/S3-DB04-Portfolio/blob/main/Proof/Professional.md) (TBA)|
