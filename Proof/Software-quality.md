@@ -45,8 +45,10 @@ For our individual project we also made a few requirements before a pull request
 but apart from that the requirements before a pull request can be approved are the same:
 - The pull request must be approved by the other member.
 - The code must have a succesful build.
-- The Sonarcloud quality check must pass **(W.I.P.)**.
+- The Sonarcloud quality check must pass.
 
+#### sonarcloud
+we have decided to not write down specific quality gate conditions for our individual project, but we try to keep the code tidy by always looking at all the code smells and security vulnerabilities when we make a pull request. If sonarcloud detects any, we will fix them first before merging.
 
 
 
@@ -70,7 +72,7 @@ def init_mock_layout_db(dummy_card_id, dummy_user_id):
 
 This is how one of our tests looks like for our authentication library:
 ``` python
-import auth #our authentication library
+import auth #our authentication library we are testing
 
 def test_verify_urlcard_to_user_when_token_exists_should_return_true():
     #arrange
@@ -87,9 +89,50 @@ def test_verify_urlcard_to_user_when_token_exists_should_return_true():
     assert result == True 
 ```
 
-
-#### Integration-API
-(WIP)
-
 ### Integration-tests
+> Integration-tests are the step after unit-tests and is the phase in testing in which individual software modules are combined and tested as a group.
+> [Wikipedia](https://en.wikipedia.org/wiki/Integration_testing#:~:text=Integration%20testing%20%28sometimes%20called%20integration%20and%20testing,%20abbreviated%20I&T%29%20is%20the%20phase%20in%20software%20testing%20in%20which%20individual%20software%20modules%20are%20combined%20and%20tested%20as%20a%20group)
+#### Integration-API
+For our integration-API we decided to test our endpoints and validate the data is in a format that our front-end understands.
+We are using Xunit as our testing framework.
+To start our whole project and mocking the data-layer we created a **web application factory** with the help of [this page](https://learn.microsoft.com/en-us/aspnet/core/test/integration-tests?view=aspnetcore-7.0#customize-webapplicationfactory). Apart form that the tests look a bit like unit tests.
+
+here is an example of a test we've made:
+``` c#
+        [Fact]
+        public async Task GetUserCredentials_returnsSuccess()
+        {
+            //arrange
+            string id_token_dummy = "1234";
+            string user_id_dummy = "4321";
+            MockAuth(id_token_dummy, user_id_dummy);
+
+            var mockCredentialsDataAcces = new Mock<ICredentialsDataAcces>();
+            _factory.MockCredentialsDataAcces(mockCredentialsDataAcces.Object);
+            mockCredentialsDataAcces.Setup(x => x.GetAllCredentials(user_id_dummy)).ReturnsAsync(_credentials_dummy);
+
+            var client = _factory.CreateClient(new WebApplicationFactoryClientOptions
+            {
+                AllowAutoRedirect = false
+            });
+
+            //act
+            var response = await client.GetAsync($"/credentials/{id_token_dummy}");
+
+            //assert
+
+            //  ensure status code 200 OK
+            response.EnsureSuccessStatusCode();
+            Assert.Equal(HttpStatusCode.OK, response.StatusCode);
+
+            //  ensure response body is correct
+            var result = await response.Content.ReadAsStringAsync();
+            JArray jArray = JArray.Parse(result);
+            Assert.Equal("integration1", jArray[0]["name"].ToString());
+            Assert.Equal("integration2", jArray[1]["name"].ToString());
+            Assert.True(jArray[0]["credentials"]["Active"].ToObject<bool>());
+            Assert.False(jArray[1]["credentials"]["Active"].ToObject<bool>());
+        }
+```
+this test calls the "*/credentials*" endpoint with an id_token from google. It checks if the correct credentials are returned in a format that the front-end understands.
 
