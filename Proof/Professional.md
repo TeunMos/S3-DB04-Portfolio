@@ -1,17 +1,23 @@
 # Professional
-> **Learning outcome:**
->You analyze and describe  **simple**  business processes that are  **related**  to your project.
 
+>**Learning outcome:**
+>You act in a professional manner during software development and learning.
 
 > **Clarification:**
->
-> **Simple:** Involving stakeholders, predominantly sequential processes with one or two alternative paths.
->
-> **Related:** Business processes during which the software that you are developing will be used (business processes that the software must support by fully or partially > automating them). 
->
-> or
->
-> Business processes needed for the success of your software development project (e.g., product release, market release, financial assurance).
+> 
+> **Professional manner:**
+> 
+> You develop software as a team effort according to a prescribed software methodology and following team agreements. You are able to track your work progress and communicate your progress with the team.
+> 
+> You actively ask and apply feedback from stakeholders and advise them on the most optimal technical and design (architectural) solutions.
+You choose and substantiate solutions for a given problem.
+
+
+
+
+
+
+
 
 ## Communication with the stakeholders
 The first step to act professional is to have good communication with the stakeholders. On every Tuesday before each sprint review our group comes together to prepare for the presentation for our stakeholders on Thursday. On the Tuesday we also send a *"sneak preview"* to our stakeholders to give them some information about what they sould expect (and shouldn't expect!) on the sprint review.  the stakeholders have indicated that they like the *"sneak preview"* we send before each sprint review and that it was a good idea from us. 
