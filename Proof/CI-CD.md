@@ -101,3 +101,6 @@ OPENWEATHERMAP_APIKEY = ...
 This is how The containers from the compose file look in Docker Desktop:
 
 ![image](https://user-images.githubusercontent.com/81776357/199514315-eb309925-0de8-4055-a336-ac79280d5060.png)
+
+## Deployment
+We've made a research document about deploying our application which you can view [here!](https://docs.google.com/document/d/12H3scYrzKteGmO81OCrcXmpe4WQdXSHRZ8Nco2Ydc54/edit?usp=sharing)
