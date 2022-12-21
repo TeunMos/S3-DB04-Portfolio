@@ -17,9 +17,14 @@ Both the individual project and the group project consist of a front-end and a b
 ### The individual project consists of these repositories:
 - [A front-end made in React](https://github.com/IPS3-DB04-Teun-Mos-Lukas-Jansen/Dashboard-Front-End)
 - [An api made in python (User-preferences-api)](https://github.com/IPS3-DB04-Teun-Mos-Lukas-Jansen/User-Preferences-API)
+- [An api made in C# (Integration-api)](https://github.com/IPS3-DB04-Teun-Mos-Lukas-Jansen/Integration-API)
+
+The front-end also uses Google API's for authentication and the integration-api is designed to use all kinds of external API's.
+
 
 ### The group project consists of these repositories:
 - [A customer front-end (made in React)](https://github.com/Modus-1/customer-frontend)
 - [A staff front-end (made in React)](https://github.com/Modus-1/staff-frontend)
 - [order-api (Asp.net)](https://github.com/Modus-1/order-api)
 - [menu-api (Asp.net)](https://github.com/Modus-1/menu-api)
+
