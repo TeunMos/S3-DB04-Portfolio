@@ -28,6 +28,10 @@ In our groups group chat we have a channel in which we type all the questions we
 
 we sometimes also come up with proposals about a feature in the project (for example: *the gateway*). We first duscuss that with our stakeholders before we start with that feature.
 
+### Disagreements
+It can happen that we disagree with the stakeholders. For example at the sprint review for sprint 5  the stakeholders told us that they expected us to finish the project with all the requirements, which we just couldn't do. In that moment it was important that we communicated with them that that was not possible. They would probably be disappointed if we told them that but that is better than not telling them and they finding out afterwards.
+
+
 ## Our group
 To make sure we are on the same line when it comes to our communication in our group we have made a [code of conduct](https://github.com/Modus-1/documentation/blob/main/Documents/Code%20of%20Conduct.md). Our code of conduct contains things like naming conventions and the definition of done. 
 
