@@ -10,13 +10,7 @@
 ### Communication
 The most important cultural expectations the stakeholders have is that they value good/clear communication. They have made clear that if we're stuck or we have questions that we should always ask them. Because good communication  with the stakeholders will save a lot of time and effort. 
 
-### The "Sneak preview"
-To make our communication even better, before each sprint review we send an email with a "sneak preview" with some important points that we are gonna discuss in the sprint review. Because we send the  "sneak preview" before each sprint review the stakeholders don't get a lot of surprises at the sprint review, and they can prepare the questions they are going to ask in advance. The stakeholders have also indicated they like the "sneak preview" we send before each sprint review.
-
-### Disagreements
-It can happen that we disagree with the stakeholders. For example at the sprint review for sprint 5  the stakeholders told us that they expected us to finish the project with all the requirements, which we just couldn't do. In that moment it was important that we communicated with them that that was not possible. They would probably be disappointed if we told them that but that is better than not telling them and they finding out afterwards.
-
-
+> **A lot more info about how we communicate with our stakeholders can be found** [**here!**](https://github.com/TeunMos/S3-DB04-Portfolio/blob/main/Proof/Professional.md#communication-with-the-stakeholders)
 
 ## The group
 
