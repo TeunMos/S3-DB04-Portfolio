@@ -1,5 +1,6 @@
 
 
+
 # Portfolio Teun Mos
 
 ## Table of contents
@@ -37,7 +38,7 @@ In these documents you can find my proof of the learing outcomes for this semest
 |CI/CD|[🔗](https://github.com/TeunMos/S3-DB04-Portfolio/blob/main/Proof/CI-CD.md)|
 |Cultural differences and ethics|[🔗](https://github.com/TeunMos/S3-DB04-Portfolio/blob/main/Proof/Cultural-differences-and-ethics.md) |
 |Requirements and design|[🔗](https://github.com/TeunMos/S3-DB04-Portfolio/blob/main/Proof/Requirements-and-design.md)|
-|Business processes|[🔗](https://github.com/TeunMos/S3-DB04-Portfolio/blob/main/Proof/Business-processes.md) (TBA)|
+|Business processes|[🔗](https://github.com/TeunMos/S3-DB04-Portfolio/blob/main/Proof/Business-processes.md) (WIP)|
 |Professional|[🔗](https://github.com/TeunMos/S3-DB04-Portfolio/blob/main/Proof/Professional.md)|
 
 
@@ -52,5 +53,5 @@ Here are my proficiency ratings for the learning outcomes:
 |CI/CD |Advanced (5) | Our CI/CD pipeline consists of using GitHub-Actions to build, test and push our code to docker-hub. We use docker-hub to store all our containers. Which we can easily pull using the [docker-compose script](https://github.com/IPS3-DB04-Teun-Mos-Lukas-Jansen#running-the-project) we've made. With that script you can run the whole application in one command. We also made one of our [research documents](https://github.com/IPS3-DB04-Teun-Mos-Lukas-Jansen/Documentation/blob/main/ResearchDocuments.md#how-do-we-use-oauth-20-in-our-dashboard-project) about deployment. You can view the research document [here!](https://docs.google.com/document/d/12H3scYrzKteGmO81OCrcXmpe4WQdXSHRZ8Nco2Ydc54/)
 |Cultural differences and ethics | Proficient (4) | [See this article!](https://github.com/TeunMos/S3-DB04-Portfolio/blob/main/Proof/Cultural-differences-and-ethics.md)|
 |Requirements and design | Proficient (4)| [See this article!](https://github.com/TeunMos/S3-DB04-Portfolio/blob/main/Proof/Requirements-and-design.md)|
-|Business processes |  Proficient (4) |[See this article!](https://github.com/TeunMos/S3-DB04-Portfolio/blob/main/Proof/Business-processes.md)|
+|Business processes |  Proficient (4) |See this article:<br/>[Business processes](https://github.com/TeunMos/S3-DB04-Portfolio/blob/main/Proof/Business-processes.md) <br/><br/> These articles also have something to do with this learning outcome:<br/> [Professional ](https://github.com/TeunMos/S3-DB04-Portfolio/blob/main/Proof/Professional.md) <br/> [Agile method](https://github.com/TeunMos/S3-DB04-Portfolio/blob/main/Proof/Agile-method.md) |
 |Professional |  Proficient (4) |[See this article!](https://github.com/TeunMos/S3-DB04-Portfolio/blob/main/Proof/Professional.md)|
