@@ -1,4 +1,5 @@
 
+
 # Portfolio Teun Mos
 
 ## Table of contents
@@ -49,7 +50,7 @@ Here are my proficiency ratings for the learning outcomes:
 |Software quality |Proficient (4) | For the individual project we've created unit tests for both our API's, and for the Integration-API we have also made some Integration-tests. All our tests run automatically in the CI/CD Pipeline in GitHub, and our tests are based on our user-stories. <br /> We also use SonarCloud as our static code analysis method for things like code-coverage. We also have a rule when merging that at least one other person must approve the code (in the group project 2 people).|
 |Agile method|Proficient (4)|For both the individual project and the group project we work in sprints. At the beginning of each sprint we look at which user-stories we are gonna work on and we have a retrospective about what went well and what can be done better last sprint. In the group project we also have a standup when the day begins.<br/><br/> You can see the sprint-planning [here!](https://github.com/IPS3-DB04-Teun-Mos-Lukas-Jansen/Documentation/blob/main/sprint-planning.md) 
 |CI/CD |Advanced (5) | Our CI/CD pipeline consists of using GitHub-Actions to build, test and push our code to docker-hub. We use docker-hub to store all our containers. Which we can easily pull using the [docker-compose script](https://github.com/IPS3-DB04-Teun-Mos-Lukas-Jansen#running-the-project) we've made. With that script you can run the whole application in one command. We also made one of our [research documents](https://github.com/IPS3-DB04-Teun-Mos-Lukas-Jansen/Documentation/blob/main/ResearchDocuments.md#how-do-we-use-oauth-20-in-our-dashboard-project) about deployment. You can view the research document [here!](https://docs.google.com/document/d/12H3scYrzKteGmO81OCrcXmpe4WQdXSHRZ8Nco2Ydc54/)
-|Cultural differences and ethics | (TBA) |(TBA)|
-|Requirements and design | (TBA) |(TBA)|
-|Business processes | (TBA) |(TBA)|
-|Professional | (TBA) |(TBA)|
+|Cultural differences and ethics | Proficient (4) | [See this article!](https://github.com/TeunMos/S3-DB04-Portfolio/blob/main/Proof/Cultural-differences-and-ethics.md)|
+|Requirements and design | Proficient (4)| [See this article!](https://github.com/TeunMos/S3-DB04-Portfolio/blob/main/Proof/Requirements-and-design.md)|
+|Business processes |  Proficient (4) |[See this article!](https://github.com/TeunMos/S3-DB04-Portfolio/blob/main/Proof/Business-processes.md)|
+|Professional |  Proficient (4) |[See this article!](https://github.com/TeunMos/S3-DB04-Portfolio/blob/main/Proof/Professional.md)|
