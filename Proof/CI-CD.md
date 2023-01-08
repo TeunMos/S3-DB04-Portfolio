@@ -10,7 +10,7 @@ This file containes all the proof for the CI/CD learing outcome.
 ## Docker
 
 ### why docker?
-For our CI/CD we decided to use Docker. First we build our project as a Docker container and then we push the container to Docker Hub. 
+For our CI/CD we decided to use Docker. We decided Docker because it makes it really easy for users to deploy our application, and because we wanted to learn how it works. First we build our project as a Docker container and then we push the container to Docker Hub. 
 We decided to use docker because we didn't want to host our application online (With a service like Azure or AWS), we had some trouble with those services in the past and more importantly they often cost money.
 
 
