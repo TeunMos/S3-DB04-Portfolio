@@ -4,7 +4,7 @@ This file containes all the proof for the Software quality learing outcome.
 > **Tooling and methodology:** Carry out, monitor and report on unit integration, regression and system tests, with attention for security and performance aspects, as well as applying static code analysis and code reviews.
 
 ## Sonarcloud
-For both the group project and the individual project we use sonarcloud to review our code quality and coverage on our tests. 
+For both the group project and the individual project we use sonarcloud to review our code quality and coverage on our tests. We decided to use sonarcloud because it is easy to set up, it is widely used in practice and because we needed a way to automatically test our code.
 
 Here are the links to the Sonarcloud organisations:
 - [Sonarcloud group project](https://sonarcloud.io/organizations/modus-1/projects)
@@ -24,6 +24,8 @@ These are the conditions for our **group project**'s quality gate to ***fail***:
 |Security Rating|is worse than|A|
 > this info may be out of date,  to ensure you have the latest information [*click here!*](https://sonarcloud.io/organizations/modus-1/quality_gates/show/9)
 
+We let everything (exept for the code coverage) on the default settings. We did that because we were able to meet those conditions *(and later we found out we couldn't meet the coverage condition)*. 
+
 For our group project we decided to remove the 80% code coverage requirement because we found out that that is not pracital for every repository, now we look what needs to be tested the most instead of a fixed value that determines if you have tested enough.
 
 ## Group project
@@ -36,7 +38,7 @@ For our group we have made it so you have to meet a few requirements before a pu
 - The Sonarcloud quality check must pass.
 
 ### Unit tests
-We created a lot of tests for our repositories in the group project, but the tests i've made myself *(together with [Lukas](https://github.com/LukasJansen100))* are mainly in the menu-api repository which you an check out [*over here!*](https://github.com/Modus-1/menu-api)
+We created a lot of tests for our repositories in the group project, but the tests i've made myself (together with [Lukas](https://github.com/LukasJansen100)) are mainly in the menu-api repository which you an check out [*over here!*](https://github.com/Modus-1/menu-api)
 
 ## Individual project
 ### branches
@@ -47,12 +49,15 @@ but apart from that the requirements before a pull request can be approved are t
 - The code must have a succesful build.
 - The Sonarcloud quality check must pass.
 
+We did that because this made sure that the code has less bugs and stays at a high quality level.
+
 #### sonarcloud
-we have decided to not write down specific quality gate conditions for our individual project, but we try to keep the code tidy by always looking at all the code smells and security vulnerabilities when we make a pull request. If sonarcloud detects any, we will fix them first before merging.
+we have decided to not write down specific quality gate conditions for our individual project, but we try to keep the code tidy by always looking at all the code smells and security vulnerabilities when we make a pull request. If sonarcloud detects any, we will fix them first before merging. We did that because we have a smaller team, but we still look at what sonarcloud says and ask each other if it is necessary do something if sonarcloud finds something.
 
 
 
 ### Unit-tests
+Unit/integration tests are really important to make sure the code works as intended. We test our code based on the user-stories, to make sure a user-story is complete
 
 #### User-preferences-API
 For our individual project we started working on unit tests for our [*User-Preferences-API*](https://github.com/IPS3-DB04-Teun-Mos-Lukas-Jansen/User-Preferences-API). We created this api in python (which we have never used before), so we first needed to find out how to write unit-tests for python. Eventually we found a package named *[PyTest](https://pytest.org/)* which works well for our project. For mocking we couldn't find a lot of packages that work for our project, but to mock our database we use [*mongomock*](https://github.com/mongomock/mongomock). We didn't go the traditional route with mocking our API, we imported our script and changed the variables that are used to our mocked ones.
