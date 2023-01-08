@@ -15,8 +15,8 @@
 >Business processes needed for the success of your software development project (e.g., product release, market release, financial assurance).
 
 
-*A lot of our buisiness processes are explained in [Agile method](https://github.com/TeunMos/S3-DB04-Portfolio/blob/main/Proof/Agile-method.md) and [Professional](https://github.com/TeunMos/S3-DB04-Portfolio/blob/main/Proof/Professional.md) so this file is missing some things that are explained in those docs, so i suggest you read those as well.*
-
+### Important disclaimer!
+- *A lot of our buisiness processes are explained in [Agile method](https://github.com/TeunMos/S3-DB04-Portfolio/blob/main/Proof/Agile-method.md) and [Professional](https://github.com/TeunMos/S3-DB04-Portfolio/blob/main/Proof/Professional.md) so this file is missing some things that are explained in those docs, so i suggest you read those as well.*
 
 ## The business process in our group
 
