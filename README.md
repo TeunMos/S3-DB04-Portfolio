@@ -1,7 +1,7 @@
 
 
 
-# Portfolio Teun Mos
+# Portfolio Teun Mos semester 3
 
 ## Table of contents
 - [Intro](#intro)
